@@ -16,7 +16,7 @@ if (!OPENROUTER_KEY) {
   console.error('ERROR: OPENROUTER_KEY environment variable required');
   process.exit(1);
 }
-
+// Log only the first 15 characters of the key for security reasons
 console.log('OpenRouter Key loaded:', OPENROUTER_KEY.substring(0, 15) + '...');
 
 const DAILY_SCAN_LIMIT = 200;
